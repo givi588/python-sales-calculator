@@ -1,11 +1,11 @@
-# Python Sales Calculator
-# A beginner-friendly project for generating sales reports.
+# Python Sales Calculator - USD
 
 products = [
-    {"name": "Keyboard", "price": 80, "quantity": 5},
-    {"name": "Mouse", "price": 35, "quantity": 4},
-    {"name": "Monitor", "price": 300, "quantity": 2},
-    {"name": "Headphones", "price": 120, "quantity": 3}
+    {"name": "Keyboard", "price": 30, "quantity": 5},
+    {"name": "Mouse", "price": 25, "quantity": 4},
+    {"name": "Monitor", "price": 150, "quantity": 2},
+    {"name": "Headphones", "price": 60, "quantity": 3},
+    {"name": "USB Cable", "price": 10, "quantity": 6}
 ]
 
 
@@ -26,12 +26,12 @@ def generate_sales_report(products):
 
         grand_total += total
 
-        print(product["name"], "-", total, "GEL")
+        print(f"{product['name']} - ${total}")
 
     print("--------------------")
-    print("Grand Total:", grand_total, "GEL")
+    print(f"Grand Total: ${grand_total}")
 
-    if grand_total >= 1000:
+    if grand_total >= 700:
         print("Sales Target: Achieved")
     else:
         print("Sales Target: Not Achieved")
