@@ -37,4 +37,5 @@ def generate_sales_report(products):
         print("Sales Target: Not Achieved")
 
 
-generate_sales_report(products)
+if __name__ == "__main__":
+    generate_sales_report(products)
